@@ -2,7 +2,7 @@
 
 Esta es una aplicación web desarrollada en React que consume la API de Giphy para buscar y visualizar gifs. El propósito de este proyecto es practicar los fetching de datos en React y sus hooks.
 
-![image](https://user-images.githubusercontent.com/107328372/236865917-4f2884fa-0519-4442-83d7-b3cc7860e520.png)
+![image](https://user-images.githubusercontent.com/107328372/236871655-5e2213da-1401-4c71-8752-c80dc129926f.png)
 
 🦾 Funcionalidades
 La aplicación permite al usuario realizar búsquedas de gifs y ver los resultados de su búsqueda. Algunas de las funcionalidades específicas son:
