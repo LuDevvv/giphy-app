@@ -1,20 +1,19 @@
-# Giphy Search App
+# Giphy Search App 🧑🏾‍💻⚡
 
 Esta es una aplicación web desarrollada en React que consume la API de Giphy para buscar y visualizar gifs. El propósito de este proyecto es practicar los fetching de datos en React y sus hooks.
 
 ![image](https://user-images.githubusercontent.com/107328372/236865917-4f2884fa-0519-4442-83d7-b3cc7860e520.png)
 
-Funcionalidades
+🦾 Funcionalidades
 La aplicación permite al usuario realizar búsquedas de gifs y ver los resultados de su búsqueda. Algunas de las funcionalidades específicas son:
 
 Barra de búsqueda: el usuario puede ingresar cualquier término de búsqueda y la aplicación mostrará los gifs correspondientes.
-Paginación: si los resultados de la búsqueda son demasiado grandes, la aplicación muestra los resultados en varias páginas.
 Visualización de detalles: el usuario puede hacer clic en cualquier gif para verlo en una ventana emergente.
 
-Tecnologías
-La aplicación está desarrollada en React y utiliza varias de sus funcionalidades, como los hooks useState y useEffect. También se utiliza Axios para realizar las solicitudes HTTP a la API de Giphy.
+💻 Tecnologías
+La aplicación está desarrollada en React y utiliza varias de sus funcionalidades, como los hooks useState y useEffect. También se utiliza el API Fetch del navegador para realizar las solicitudes HTTP a la API de Giphy.
 
-Instalación y configuración
+⬇️ Instalación y configuración
 Para instalar la aplicación, sigue los siguientes pasos:
 
 Clona el repositorio a tu computadora utilizando Git.
