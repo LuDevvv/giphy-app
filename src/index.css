@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,11 +9,9 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #151414;
-
+  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,89 +19,78 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* 1a1a1a 242424 */
-
-body{
+body {
   display: flex;
   justify-content: center;
 }
 
-.load-gifs{
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-duration: 3s;
-}
-
-.result-search{
-  font-size: 25px;
-  margin-bottom: 25px;
-}
-
-.ct-all{
+.ct-all {
+  margin-top: 50px;
   width: 50rem;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-
-.flex-logo{
+.load-gifs {
+  font-size: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 25px;
 }
 
-.logo{
+.result-search {
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: rgba(0, 0, 0, 0.563);
+}
+
+.logo {
   width: 30px;
 }
-.title{
+.title {
   font-size: 40px;
   text-align: center;
+  color: black;
 }
 
-.ct-search{
+.ct-search {
   display: flex;
   gap: 10px;
   width: 100%;
-  height: 50px;
+  height: 40px;
 }
 
-.input{
+.input {
+  color: rgba(0, 0, 0, 0.563);
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding-left: 10px;
   border: 1px solid transparent;
   border-radius: 5px;
   font-size: 16px;
   outline: none;
+  background-color: rgba(128, 128, 128, 0.142);
+  font-weight: 500;
 }
-
-.input:focus{
-  border: #FF5733 solid 1.5px;
-}
-
-
 
 button {
-  width: 100px;
-  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 100%;
   border: 1px solid transparent;
-  border-radius: 5px;  
-  font-size: auto;
+  border-radius: 5px;
+  font-size: 25px;
   font-weight: bold;
   font-family: inherit;
-  background-color: #ff5833ca ;
+  background-color: #0095ffca;
   cursor: pointer;
-  transition: all ease-in-out 0.25s;
-}
-button:hover {
-  background-color: #ff5833;
-  transition: all ease-in-out 0.25s;
 }
 
-.card-gif{
+.card-gif {
   width: 100%;
   height: auto;
   display: grid;
@@ -112,23 +99,23 @@ button:hover {
   margin-bottom: 50px;
 }
 
-.ct-card{
+.ct-card {
   position: relative;
+  background-color: #ffffff47;
 }
 
-.card-gif-img{
+.card-gif-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.card-gif-title{
+.card-gif-title {
   width: 100%;
   bottom: 0;
   position: absolute;
   text-align: center;
-  background-color: #1514148f;
   padding: 5px;
+  background-color: rgba(0, 0, 0, 0.247);
 }
-

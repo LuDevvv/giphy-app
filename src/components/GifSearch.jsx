@@ -1,28 +1,27 @@
-import React from 'react';
-import { useFetchGifs } from '../hooks/useFetchGifs';
-import { GifSearchItem } from './GifSearchItem';
+import React from "react";
+import { useFetchGifs } from "../hooks/useFetchGifs";
+import { GifSearchItem } from "./GifSearchItem";
+import { BiSearch } from "react-icons/bi";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 export const GifSearch = ({ category }) => {
-    
-    const { data:images , loading } = useFetchGifs( category );  
+  const { data: images, loading } = useFetchGifs(category);
+  return (
+    <div className="results-search">
+      {
+        category && <h3 className="result-search">
+        <BiSearch /> Resultados para: {category}
+     </h3>
+      }
 
-    return (
-        <div className='results-search'>
-            <h3 className='result-search animate__animated animate__fadeIn'>{ category }</h3>
-            
-            { loading && <h3 className='load-gifs animate__animated animate__pulse animate__pulse'>Loading...</h3>}
-        
-            <div className='card-gif animate__animated'>
-                {
-                    images.map( img => (
-                        <GifSearchItem 
-                            key={ img.id }
-                            {...img} 
-                        />
-                    ))
-                }   
-            </div>
-        </div>
-    );
-}
+      {loading && <Skeleton count={20} />}
 
+      <div className="card-gif">
+        {images.map((img) => (
+          <GifSearchItem key={img.id} {...img} />
+        ))}
+      </div>
+    </div>
+  );
+};

@@ -1,32 +1,24 @@
-import React from 'react';
+import React from "react";
 import { useState } from "react";
-import { AddCategory } from './components/AddCategory';
-import { LogoComp } from './components/Logo';
-import  { GifSearch }  from './components/GifSearch';
-import { GifSearchItem } from './components/GifSearchItem';
-
+import { AddCategory } from "./components/AddCategory";
+import { GifSearch } from "./components/GifSearch";
+import { Logo } from './components/Logo';
 
 const GiphyApp = () => {
-    
-    const [categories , setCategories] = useState(['']);
+  const [categories, setCategories] = useState([""]);
+  // console.log(categories);
 
-    return(
-        <div className='ct-all'>
-            <LogoComp />
-            <AddCategory setCategories={ setCategories } />
-            <GifSearchItem/>
-            <ol className='allItems'>   
-                { 
-                    categories.map(category => (    
-                        <GifSearch 
-                            key={ category }
-                            category={ category } 
-                        /> 
-                    ))
-                }   
-            </ol>
-        </div>
-    );
-}
+  return (
+    <div className="ct-all">
+      <Logo />
+      <AddCategory setCategories={setCategories} />
+      <ol className="allItems">
+        {categories && categories.map((category) => (
+          <GifSearch key={category} category={category} />
+        ))}
+      </ol>
+    </div>
+  );
+};
 
 export default GiphyApp;
