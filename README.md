@@ -8,7 +8,8 @@
 
 Una moderna aplicación web de búsqueda de GIFs con interfaz atractiva, almacenamiento de historial y experiencia de usuario mejorada.
 
-![Giphy Search App Preview](https://i.imgur.com/vvBE27A.png)
+![Giphy Search App Preview](https://github.com/user-attachments/assets/8a8bf6d0-2c6b-4301-ba49-5d4d95333ec5)
+
 
 ## ✨ Características
 
