@@ -112,14 +112,6 @@ giphy-search-app/
 - Interfaz desplegable para acceder fácilmente a búsquedas anteriores
 - Contador de frecuencia para cada término buscado
 
-### Interfaz Mejorada
-
-- Tema oscuro con acentos de color vibrantes
-- Animaciones suaves y transiciones
-- Carga infinita para explorar más resultados
-- Visualización modal para detalles del GIF
-- Componentes totalmente responsivos
-
 ### Funcionalidades Adicionales
 
 - Descarga directa de GIFs
@@ -134,10 +126,3 @@ giphy-search-app/
 - **Optimizaciones de Rendimiento**: Lazy loading de imágenes y componentes
 - **Infinite Scroll**: Implementación mediante Intersection Observer API
 - **Manejo Mejorado de Errores**: Gestión de errores más robusta en peticiones API
-
-## 📱 Responsive Design
-
-La aplicación está completamente optimizada para dispositivos móviles:
-
-- Diseño fluido que se adapta a cualquier tamaño de pantalla
-- Experiencia táctil
